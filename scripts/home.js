@@ -50,19 +50,19 @@ categories__right.innerHTML = category_data.map((item) => {
 
 const courses_data= [
   {
-    course_img:"../images/course1.jpg ",
+    course_img:"../images/images/course1.jpg ",
     course_name:"Responsive website UI design",
     course_desc:" Eos dolor dolor labore diam sadipscing sadipscing magna. Duo dolor dolores justo no, et sed dolores diam dolore clita vero..",
     course_page: "course.html",
   },
   {
-    course_img:"../images/course2.png  ",
+    course_img:"../images/images/course3.jpg  ",
     course_name:"Responsive website UI design",
     course_desc:" Eos dolor dolor labore diam sadipscing sadipscing magna. Duo dolor dolores justo no, et sed dolores diam dolore clita vero..",
     course_page: "course.html",
   },
   {
-    course_img:"../images/course3.jpg ",
+    course_img:"../images/images/course1.jpg ",
     course_name:"Responsive website UI design",
     course_desc:" Eos dolor dolor labore diam sadipscing sadipscing magna. Duo dolor dolores justo no, et sed dolores diam dolore clita vero..",
     course_page: "course.html",
@@ -143,7 +143,7 @@ faqs__container.innerHTML = faqs_data.map( faq=>{
   let {quiz, ans} = faq
 
   return `
-  <article class="faq">
+  <article class="faq" >
   <div class="faq__icon"><i class="bi bi-plus-lg"></i></div>
   <div class="question__answer">
     <h4>How do i know the right course for me</h4>
@@ -176,7 +176,7 @@ faqs.forEach(faq =>{
 //TESTIMONIALS DATA
 const testimonials_data =[
   {
-    avatar:'../images/student2.png',
+    avatar:'../images/avatar1.jpg',
     name:'ASige Juma',
     type:'student',
     testimony:'Magna dolores erat justo et no nonumy ea sed vero amet, ipsum vero diam lorem ipsum sanctus erat justo, eirmod ut lorem sit amet et.'
@@ -217,8 +217,9 @@ testimonials__container.innerHTML = testimonials_data.map( item=>{
   <div class="avatar">
     <img src= ${avatar} alt="student photo" />
   </div>
-  <div class="testimonial__info">
+  <div class = "testimonial__info">
     <h5>${name}</h5>
+    
     <small>${type}</small>
   </div>
   <div class="testimonial__body">
@@ -229,3 +230,5 @@ testimonials__container.innerHTML = testimonials_data.map( item=>{
 </article>
   `
 }).join("")
+
+
